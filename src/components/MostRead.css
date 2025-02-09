@@ -1,0 +1,142 @@
+.most-read-first-part {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+}
+
+.most-read-text {
+  background-color: #203354;
+  padding: 0px 50px;
+  color: #ffffff;
+  border-radius: 5px 0 0 0px;
+  text-align: right;
+  font-size: 18px;
+  flex-grow: 1;
+}
+
+.minus-sign {
+  background-color: red;
+  color: #ffffff;
+  border: none;
+  padding: 0px 30px;
+  font-weight: 600;
+  border-radius: 0 5px 0 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.most-read-paragraph {
+  background-color: #ebebeb;
+  text-align: right;
+  color: #777777;
+  font-size: 14px;
+  font-weight: 550;
+  padding: 10px 70px;
+  border-radius: 0 0 5px 5px;
+}
+
+.plus-sign {
+  background-color: #047243;
+  color: #ffffff;
+  border: none;
+  padding: 0px 20px;
+  font-weight: 600;
+  border-radius: 0 5px 0 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.most-read-subtitle {
+  background-color: #ffffff;
+  padding: 0px 50px;
+  color: #047243;
+  border-radius: 5px 0 0 0px;
+  text-align: right;
+  font-size: 14px;
+  flex-grow: 1;
+  border: 0.1px solid #cccccc;
+}
+
+.most-read {
+  margin-bottom: 15px;
+}
+
+.all-most-reads {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.most-read-title {
+  color: #047243;
+  font-size: 25px;
+  font-weight: 550;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .most-read-first-part {
+    flex-direction: column;
+  }
+
+  .most-read-text,
+  .most-read-subtitle {
+    padding: 0px 20px;
+    font-size: 16px;
+  }
+
+  .minus-sign,
+  .plus-sign {
+    padding: 0px 15px;
+    font-size: 18px;
+  }
+
+  .most-read-paragraph {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+
+  .all-most-reads {
+    gap: 10px;
+  }
+
+  .most-read-title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .most-read-first-part {
+    flex-direction: column;
+  }
+
+  .most-read-text,
+  .most-read-subtitle {
+    padding: 0px 10px;
+    font-size: 14px;
+  }
+
+  .minus-sign,
+  .plus-sign {
+    padding: 0px 10px;
+    font-size: 16px;
+  }
+
+  .most-read-paragraph {
+    padding: 10px 15px;
+    font-size: 12px;
+  }
+
+  .all-most-reads {
+    gap: 5px;
+  }
+
+  .most-read-title {
+    font-size: 18px;
+  }
+}
